@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <PackageId>VerdantSparks.NETCore3-NugetPackage-Template</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ferry To</Authors>
+    <Company>VerdantSparks</Company>
+    <PackageDescription>
+      You should change the content of this file with your own needs.
+    </PackageDescription>
+    <RepositoryUrl>https://github.com/VerdantSparks/.NETCore3-NugetPackage-Template</RepositoryUrl>
+    <RootNamespace>.NETCore3-NugetPackage-Template</RootNamespace>
+  </PropertyGroup>
+</Project>
