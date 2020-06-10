@@ -25,6 +25,7 @@ namespace DataPersistence.NoSql
         }
 
         public IMongoDatabase Database => MongoClient.GetDatabase(DatabaseName);
+
         /// <summary>
         /// HealthCheck() should be called first to ensure it works properly
         /// </summary>
@@ -45,7 +46,8 @@ namespace DataPersistence.NoSql
         {
             var dbExists = await DatabaseExists(DatabaseName);
 
-            if (!dbExists) return 1;
+            if (!dbExists)
+                return 1;
 
             var db = MongoClient.GetDatabase(DatabaseName);
             var collectionExists = await CollectionExists(db, CollectionName);
@@ -79,6 +81,7 @@ namespace DataPersistence.NoSql
 
             return names.Contains(databaseName);
         }
+
         public async Task<bool> CollectionExists(IMongoDatabase database, string collectionName)
         {
             var cursor = await database.ListCollectionNamesAsync();
