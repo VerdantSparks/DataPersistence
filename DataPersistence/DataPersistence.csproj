@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <PackageId>VerdantSparks.DataPersistence</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ferry To</Authors>
+    <Company>VerdantSparks</Company>
+    <PackageDescription>
+      Library of helper classes for accessing different data persistence storage.
+    </PackageDescription>
+    <RepositoryUrl>https://github.com/VerdantSparks/DataPersistence</RepositoryUrl>
+    <RootNamespace>DataPersistence</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
+  </ItemGroup>
+</Project>
