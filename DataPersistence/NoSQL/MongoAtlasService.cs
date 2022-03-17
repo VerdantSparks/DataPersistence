@@ -78,7 +78,7 @@ namespace DataPersistence.NoSql
         {
             var cursor = await MongoClient.ListDatabaseNamesAsync();
             var names = await cursor.ToListAsync();
-
+            Console.WriteLine("Hey!:)");
             return names.Contains(databaseName);
         }
 
