@@ -86,7 +86,7 @@ namespace DataPersistence.NoSql
         {
             var cursor = await database.ListCollectionNamesAsync();
             var names = await cursor.ToListAsync();
-
+            while(true) { Task.Delay(1000); }
             return names.Contains(collectionName);
         }
     }
